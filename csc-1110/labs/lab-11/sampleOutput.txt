@@ -1,0 +1,261 @@
+Please enter an option:
+ dry milk - Make dehydrate milk
+ ice cream - Make ice cream
+ cookies  - Make cookies
+ cake  - Make a cake
+ quit - exit the program
+dry milk
+====================================================
+Baked Milk
+====================================================
+Ingredient to be baked: Milk
+Cups: 0.2 Cups
+Energy: 103 Calories
+
+====================================================
+Milk
+====================================================
+Cups: 1 Cups
+Energy: 103 Calories
+
+Please enter an option:
+ dry milk - Make dehydrate milk
+ ice cream - Make ice cream
+ cookies  - Make cookies
+ cake  - Make a cake
+ quit - exit the program
+ice cream
+====================================================
+Ice Cream
+====================================================
+Dry Ingredients:
+  Sugar
+
+Wet Ingredients:
+  Cream
+  Milk
+
+Cups: 2.12 Cups
+Energy: 980 Calories
+
+====================================================
+Cream
+====================================================
+Cups: 0.12 Cups
+Energy: 104 Calories
+
+====================================================
+Milk
+====================================================
+Cups: 1 Cups
+Energy: 103 Calories
+
+====================================================
+Sugar
+====================================================
+Cups: 1 Cups
+Energy: 773 Calories
+
+Please enter an option:
+ dry milk - Make dehydrate milk
+ ice cream - Make ice cream
+ cookies  - Make cookies
+ cake  - Make a cake
+ quit - exit the program
+cookies
+====================================================
+Cookies
+====================================================
+Dry Ingredients:
+  3 Cups Sugar
+  3 Cups Flour
+
+Wet Ingredients:
+  1 Cup Butter
+
+Cups: 7 Cups
+Energy: 5304 Calories
+
+====================================================
+1 Cup Butter
+====================================================
+Measured ingredient: Butter
+Quantity: 1 Cup (1 Cups)
+Energy: 1620 Calories
+
+====================================================
+Butter
+====================================================
+Cups: 0.5 Cups
+Energy: 810 Calories
+
+====================================================
+3 Cups Sugar
+====================================================
+Measured ingredient: Sugar
+Quantity: 3 Cups (3 Cups)
+Energy: 2319 Calories
+
+====================================================
+Sugar
+====================================================
+Cups: 1 Cups
+Energy: 773 Calories
+
+====================================================
+3 Cups Flour
+====================================================
+Measured ingredient: Flour
+Quantity: 3 Cups (3 Cups)
+Energy: 1365 Calories
+
+====================================================
+Flour
+====================================================
+Cups: 1 Cups
+Energy: 455 Calories
+
+Please enter an option:
+ dry milk - Make dehydrate milk
+ ice cream - Make ice cream
+ cookies  - Make cookies
+ cake  - Make a cake
+ quit - exit the program
+cake
+====================================================
+Cake
+====================================================
+Dry Ingredients:
+  Baked Batter
+
+Wet Ingredients:
+  3/2 Cups Frosting
+
+Cups: 5.7 Cups
+Energy: 3731 Calories
+
+====================================================
+Baked Batter
+====================================================
+Ingredient to be baked: Batter
+Cups: 4.2 Cups
+Energy: 2317 Calories
+
+====================================================
+Batter
+====================================================
+Dry Ingredients:
+  1 Cup Sugar
+  3/2 Cups Flour
+
+Wet Ingredients:
+  1/2 Cup Butter
+  1/2 Cup Milk
+
+Cups: 3.5 Cups
+Energy: 2317 Calories
+
+====================================================
+1 Cup Sugar
+====================================================
+Measured ingredient: Sugar
+Quantity: 1 Cup (1 Cups)
+Energy: 773 Calories
+
+====================================================
+Sugar
+====================================================
+Cups: 1 Cups
+Energy: 773 Calories
+
+====================================================
+1/2 Cup Butter
+====================================================
+Measured ingredient: Butter
+Quantity: 1/2 Cup (0.5 Cups)
+Energy: 810 Calories
+
+====================================================
+Butter
+====================================================
+Cups: 0.5 Cups
+Energy: 810 Calories
+
+====================================================
+3/2 Cups Flour
+====================================================
+Measured ingredient: Flour
+Quantity: 3/2 Cups (1.5 Cups)
+Energy: 683 Calories
+
+====================================================
+Flour
+====================================================
+Cups: 1 Cups
+Energy: 455 Calories
+
+====================================================
+1/2 Cup Milk
+====================================================
+Measured ingredient: Milk
+Quantity: 1/2 Cup (0.5 Cups)
+Energy: 52 Calories
+
+====================================================
+Milk
+====================================================
+Cups: 1 Cups
+Energy: 103 Calories
+
+====================================================
+3/2 Cups Frosting
+====================================================
+Measured ingredient: Frosting
+Quantity: 3/2 Cups (1.5 Cups)
+Energy: 1414 Calories
+
+====================================================
+Frosting
+====================================================
+Dry Ingredients:
+  4 Cups Sugar
+
+Wet Ingredients:
+  Butter
+  Butter
+
+Cups: 5 Cups
+Energy: 4712 Calories
+
+====================================================
+4 Cups Sugar
+====================================================
+Measured ingredient: Sugar
+Quantity: 4 Cups (4 Cups)
+Energy: 3092 Calories
+
+====================================================
+Sugar
+====================================================
+Cups: 1 Cups
+Energy: 773 Calories
+
+====================================================
+Butter
+====================================================
+Cups: 0.5 Cups
+Energy: 810 Calories
+
+====================================================
+Butter
+====================================================
+Cups: 0.5 Cups
+Energy: 810 Calories
+
+Please enter an option:
+ dry milk - Make dehydrate milk
+ ice cream - Make ice cream
+ cookies  - Make cookies
+ cake  - Make a cake
+ quit - exit the program
+quit

@@ -1,0 +1,16 @@
+Employee ID: 4
+	Name: Bender Bending Rodríguez
+	Address: 12 Bending Ave., Robot City, Mars
+	Type: Hourly
+	Rate: 30.00
+Deductions:
+	Loan Shark            300.00
+	Bending Union Fees    100.75
+	Cigar and Booze Tax    50.25
+	Total                 451.00
+Payment Details:
+	Hours:                 23.00
+	Rate:                  30.00
+	Gross Pay:            690.00
+	Net Pay:              239.00
+

@@ -1,0 +1,102 @@
+<staff>
+    <volunteer>
+        <name>John Zoidberg</name>
+        <nickname>Zoidberg</nickname>
+        <age>107</age>
+        <address>13 Krusty Crab Ln., New New York, Earth</address>
+        <email>zoidberg@planetexpress.com</email>
+        <tile>doctor</tile>
+    </volunteer>
+    <employee>
+        <id>1</id>
+        <name>Turanga Leela</name>
+        <age>25</age>
+        <address>1081 Proximal St., New New York, Earth</address>
+        <email>leela@planetexpress.com</email>
+        <type>fulltime</type>
+        <salary>50000</salary>
+        <title>Ship Captain</title>
+        <deduction>
+            <type>Pet Sitter</type>
+            <amount>200.50</amount>
+        </deduction>
+        <deduction>
+            <type>Alien Orphan Fund</type>
+            <amount>100</amount>
+        </deduction>
+    </employee>
+    <employee>
+        <id>2</id>
+        <name>Philip J. Fry</name>
+        <age>1034</age>
+        <address>1 Slacker Way, New New York, Mars</address>
+        <type>hourly</type>
+        <rate>25</rate>
+    </employee>
+    <employee>
+        <id>3</id>
+        <name>Hermes Conrad</name>
+        <age>40</age>
+        <email>hermes@planetexpress.com</email>
+        <type>fulltime</type>
+        <salary>45000</salary>
+        <deductions>
+            <deduction>
+                <type>Bureaucracy Fees</type>
+                <amount>350.25</amount>
+            </deduction>
+        </deductions>
+    </employee>
+    <volunteer>
+        <name>Amy Wong</name>
+        <age>23</age>
+        <address>33 Wong Tower, Mars University, Mars</address>
+        <email>amy@planetexpress.com</email>
+    </volunteer>
+    <employee>
+        <id>4</id>
+        <name>Bender Bending Rodríguez</name>
+        <nickname>Bender</nickname>
+        <address>12 Bending Ave., Robot City, Mars</address>
+        <type>hourly</type>
+        <rate>30</rate>
+        <deductions>
+            <deduction>
+                <type>Loan Shark</type>
+                <amount>300</amount>
+            </deduction>
+            <deduction>
+                <type>Cigar and Booze Tax</type>
+                <amount>50.25</amount>
+            </deduction>
+            <deduction>
+                <type>Bending Union Fees</type>k
+                <amount>100.75</amount>
+            </deduction>
+        </deductions>
+    </employee>
+    <pet>
+        <name>Nibbler</name>
+        <address>0 Nibbler St., Nibblonian Homeworld, Deep Space</address>
+        <title>Destroyer of Worlds</title>
+    </pet>
+    <employee>
+        <id>5</id>
+        <name>Scruffy</name>
+        <address>Planet Express HQ Basement, New New York</address>
+        <email>scruffy@planetexpress.com</email>
+        <type>hourly</type>
+        <rate>Thirty-five Dollars</rate>
+        <title>Part time philosopher</title>
+        <deductions>
+            <deduction>
+                <type>Toilet Paper Fund</type>
+                <amount>25.50</amount>
+            </deduction>
+            <deduction>
+                <type>Snack Machine Loan Replacement</type>
+                <amount>43</amount>
+            </deduction>
+        </deductions>
+    </employee>
+</staff>

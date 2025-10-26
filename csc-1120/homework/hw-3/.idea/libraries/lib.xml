@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-platform-console-standalone-1.11.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/testfx-core-4.0.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/testfx-junit5-4.0.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/openjfx-monocle-21.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

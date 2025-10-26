@@ -1,0 +1,11 @@
+Employee ID: 2
+	Name: Philip J. Fry
+	Address: 1 Slacker Way, New New York, Mars
+	Type: Hourly
+	Rate: 25.00
+Payment Details:
+	Hours:                 24.00
+	Rate:                  25.00
+	Gross Pay:            600.00
+	Net Pay:              600.00
+

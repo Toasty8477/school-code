@@ -1,0 +1,12 @@
+void first()
+  int second(8, 13, 2)
+  return 55
+  int third()
+    void fourth()
+    return
+  return 0
+  fifth()
+  return
+  sixth()
+  return
+return
