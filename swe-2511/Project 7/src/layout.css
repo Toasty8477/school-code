@@ -1,0 +1,38 @@
+/* The styling for the parent page element */
+.HolyGrail {
+    margin: 0;              /* Remove the margin to eliminate scroll bars */
+    height: 100vh;
+
+    display: grid;          /* Grid allows for setting the template for the page */
+    grid-template-columns: minmax(12em, 20em) auto; /* Grid columns: the left column should never
+                                         be smaller than 12em
+                                         The rest can grow as large as
+                                         it needs to be */
+    grid-template-rows: auto 1fr auto; /* Grid rows: the top and bottom should grow
+                                         or shrink but be auto sized to only be
+                                         as tall as needed.  The middle row should
+                                         be set to the rest of the available space */
+    grid-gap: 0;            /* No gap between items */
+
+    /* Grid template areas define the row and column span for items */
+    grid-template-areas:
+        "header header"
+        "nav content"
+        "footer footer";
+}
+
+.HolyGrail-header {
+    grid-area: header;  /* Header item */
+}
+
+.HolyGrail-footer {
+    grid-area: footer;  /* Footer item */
+}
+
+.HolyGrail-content {
+    grid-area: content; /* Main content item */
+}
+
+.HolyGrail-nav {
+    grid-area: nav;     /* Navigation item */
+}

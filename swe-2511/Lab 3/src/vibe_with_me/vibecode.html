@@ -1,0 +1,83 @@
+<!--
+	Class: SWE2511 - Layout Managers
+	Vibecoded Website
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Market - Fruits & Vegetables</title>
+    <link rel="stylesheet" href="vibecode.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="logo">🥑 Fresh Market</div>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- Search + Filter -->
+<section class="search-filter">
+    <h2 class="visually-hidden">Search and Filter</h2>
+    <input type="text" id="search" placeholder="Search fruits & veggies...">
+    <select id="filter">
+        <option value="all">All</option>
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+    </select>
+</section>
+
+<!-- Main Layout -->
+<main class="main">
+    <!-- Product Grid -->
+    <section class="products">
+        <h2 class="visually-hidden">Products</h2>
+        <div class="product" data-category="fruits">
+            <img src="https://via.placeholder.com/200x150?text=Apple" alt="Apple">
+            <h3>Apple</h3>
+            <p>$1.50 / lb</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-category="fruits">
+            <img src="https://via.placeholder.com/200x150?text=Banana" alt="Banana">
+            <h3>Banana</h3>
+            <p>$0.60 / lb</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-category="vegetables">
+            <img src="https://via.placeholder.com/200x150?text=Carrot" alt="Carrot">
+            <h3>Carrot</h3>
+            <p>$1.20 / lb</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-category="vegetables">
+            <img src="https://via.placeholder.com/200x150?text=Broccoli" alt="Broccoli">
+            <h3>Broccoli</h3>
+            <p>$1.80 / lb</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <aside class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p class="cart-total">Total: $<span id="cart-total">0.00</span></p>
+    </aside>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 Fresh Market. All rights reserved.</p>
+    <p>Contact: support@freshmarket.com</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

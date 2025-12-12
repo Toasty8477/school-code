@@ -1,0 +1,25 @@
+/*
+ * Class: SWE2511 - Layout Managers
+ * Flex Layout Exercise 1
+ * Name(s): Colin Glynn and Alex Horton
+ * Class Section: 111
+ */
+
+.cards {
+    display: flex;
+    /* additional tags added */
+    flex-direction: row;
+    gap: 5px;
+    overflow-x: auto;
+    padding: 5px;
+}
+
+.card {
+    /* Additional CSS properties and values as needed */
+    width: 300px;
+    flex: 0 0 auto;
+    border: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: white;
+}

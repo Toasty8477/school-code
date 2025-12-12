@@ -1,0 +1,11 @@
+## JavaScript Interpreters
+#### Mozilla Firefox
+Firefox uses the SpiderMonkey JavaScript interpreter. Originally the engine was called Mocha but was rewritten and named SpiderMonkey because the messy codebase looked like the long arms of a spider monkey. [Source](https://www.geeksforgeeks.org/websites-apps/how-spidermonkey-works-in-mozilla-firefox-browser/)  
+The current default compiler WarpMonkey uses CacheIR to optimize generation of bytecode. it also includes pre optimized CacheIR versions of built in functions and removes global type inference data. This results in a 10-12% increase in speed on the speedometer benchmark and 8% less memory usage over IonMonkey. [Source](https://hacks.mozilla.org/2020/11/warp-improved-js-performance-in-firefox-83/)  
+SpiderMonkey is designed to be embedded in other projects and is used in Mozilla Application Framework applications, MongoDB v3.2 and above, GNOME 3, Adobe Acrobat, and many FOSS projects. [Source](https://en.wikipedia.org/wiki/SpiderMonkey#Use)  
+#### Google Chromium
+Chromium uses the V8 Javascript interpreter. It was named for the V8 motor. [Source](https://www.youtube.com/watch?v=hWhMKalEicY)  
+V8 uses inlining, inline caching, eliminates copying of expensive runtime properties, and an incremental garbage collector. In google's own stress test the incremental GC reduced maximum frame render time from 272ms to 50ms over the old GC. The rest of the optimizations are fairy standard compiler optimizations. [Source 1](https://blog.chromium.org/2011/11/game-changer-for-interactive.html) [Source 2](https://blog.chromium.org/2011/11/game-changer-for-interactive.html)  
+V8 is also designed to be used outside of the browser. As well as being used in chromium based browsers such as chrome, edge, and opera it is used by the Node.js and Deno runtime environments and the Couchbase database server [Source](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)#Usage)
+#### JavaScript outside the browser
+Using JavaScript outside the browser to write your application makes it very easy to create a web version of your app as well. There are also many developers that know JavaScript so if your app is writen in JavaScript they do not have to work with a new on unfamiliar langauge when joining a project.

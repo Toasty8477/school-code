@@ -1,0 +1,8 @@
+- Describe the HTML iframe in your own words. Give an example (include an HTML code file in your submission) of a use for an iframe.
+  - An HTML iframe (short for inline frame) is an HTML element represented by the < iframe > tag. It allows you to embed another HTML document or webpage within the current webpage. Essentially, it acts as a "window" through which users can view and interact with external content.
+- Research HTML iframes specifically focusing on security. What is one potential security vulnerability/concern with using an iframe?
+  - One potential vulnerability could be attackers injecting an iframe into a safe website, mimicking a logic prompt or other misleading things in the iframe that trick the user into thinking they are entering information into the actual webstie. 
+- Research the following attributes for an iframe. What does each attempt so solve from a security perspective. Describe (no code required) a use for each attribute. 
+  - allow - controls permission (ex. autoplay, fullscreen).
+  - referrerpolicy - specifies how much referrer information should be included with requests made from the iframe.
+  - sandbox - Adds security restrictions to the iframe content.

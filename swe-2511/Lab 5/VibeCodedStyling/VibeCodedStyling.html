@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHomes - Find Your Perfect Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Navbar -->
+<header class="bg-blue-600 text-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold">DreamHomes</h1>
+        <nav class="space-x-4 hidden md:flex">
+            <a href="#" class="hover:text-yellow-300">Buy</a>
+            <a href="#" class="hover:text-yellow-300">Rent</a>
+            <a href="#" class="hover:text-yellow-300">Sell</a>
+            <a href="#" class="hover:text-yellow-300">Contact</a>
+        </nav>
+        <button class="md:hidden border border-white rounded p-1">☰</button>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-[url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center h-[60vh] flex flex-col justify-center items-center text-center text-white">
+    <h2 class="text-4xl font-bold drop-shadow-lg">Find Your Dream Home</h2>
+    <p class="mt-2 text-lg drop-shadow-md">Browse listings, explore neighborhoods, and make your move today.</p>
+</section>
+
+<!-- Search Form -->
+<section class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6 mt-[-4rem] relative z-10">
+    <form id="searchForm" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+            <label for="location" class="block font-semibold mb-1">Location</label>
+            <input type="text" id="location" name="location" required placeholder="City or ZIP" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+            <label for="price" class="block font-semibold mb-1">Max Price ($)</label>
+            <input type="number" id="price" name="price" min="50000" max="5000000" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="flex items-end">
+            <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded hover:bg-blue-700">Search</button>
+        </div>
+    </form>
+    <p id="formError" class="text-red-500 mt-2 hidden">Please enter valid search information.</p>
+</section>
+
+<!-- Listings -->
+<section class="max-w-6xl mx-auto p-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1572120360610-d971b9b78825?auto=format&fit=crop&w=800&q=80" alt="House 1" class="rounded-t-lg h-48 w-full object-cover">
+        <div class="p-4">
+            <h3 class="text-xl font-semibold">Modern Family Home</h3>
+            <p class="text-gray-500">$450,000 • 3 Bed • 2 Bath</p>
+            <button class="mt-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">View Details</button>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="House 2" class="rounded-t-lg h-48 w-full object-cover">
+        <div class="p-4">
+            <h3 class="text-xl font-semibold">Luxury Villa</h3>
+            <p class="text-gray-500">$1,200,000 • 5 Bed • 4 Bath</p>
+            <button class="mt-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">View Details</button>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="House 3" class="rounded-t-lg h-48 w-full object-cover">
+        <div class="p-4">
+            <h3 class="text-xl font-semibold">Downtown Condo</h3>
+            <p class="text-gray-500">$600,000 • 2 Bed • 2 Bath</p>
+            <button class="mt-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">View Details</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-gray-200 text-center p-4 mt-10">
+    <p>&copy; 2025 DreamHomes. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Simple form validation
+    const form = document.getElementById('searchForm');
+    const errorMsg = document.getElementById('formError');
+
+    form.addEventListener('submit', (e) => {
+        const location = form.location.value.trim();
+        const price = form.price.value;
+        if (location === '' || price <= 0) {
+            e.preventDefault();
+            errorMsg.classList.remove('hidden');
+        } else {
+            errorMsg.classList.add('hidden');
+        }
+    });
+</script>
+
+</body>
+</html>

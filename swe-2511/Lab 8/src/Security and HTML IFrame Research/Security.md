@@ -1,0 +1,7 @@
+ - Describe cross site scripting in your own words.
+   - Cross-site scripting (XSS) is an exploit where the attacker attaches code onto a legitimate website that will execute when the victim loads the website. That malicious code can be inserted in several ways. 
+ - Attack mechanisms are sometimes called "vectors". From your research, what are two (2) different vectors that attackers use to inject JavaScript in a web application? Provide a detailed description of each - specifically how is the attack executed?
+   - One type of vector that attackers use in their attacks is form inputs. Attackers can inject malicious scripts into form fields that are later displayed on the website without proper sanitization. 
+   - Another type of vector used by attackers is URL parameters. JavaScript code can be injected into URLs where the application uses parameters without proper encoding or validation.
+ - What strategies can a web application developer use to prevent these attacks? Name and describe each strategy.
+   - Some of the common strategies to combat XSS are validating input (checking for common XSS attack tags such as < script >), sanitize data (ensure no runnable html is present, especially is using innerHTML to set DOM tree elements), and review and test code to ensure no vulnerabilities.

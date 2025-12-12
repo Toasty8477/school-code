@@ -1,0 +1,21 @@
+/* Default styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+}

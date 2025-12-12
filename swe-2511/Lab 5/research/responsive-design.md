@@ -1,0 +1,5 @@
+**Mobile First Design** is a responsive design principle where designers create a website for mobile devices and then adapt it to larger screens. Mobile-first design is intended to reduce clutter and make the design more user friendly. [Source](https://www.designveloper.com/blog/responsive-web-design-principles/)
+
+**Touch Targets** makes sure that users on touch screen devices are more easily able to interact with the website. Generaly this means making navigation items such as buttons larger. [Source](https://www.udacity.com/blog/2024/07/the-10-key-principles-of-responsive-web-design-a-beginners-guide.html)
+
+**Responsive Media** ensures that images and videos do not overflow their container by using percentage sizing rather than absolute units like `px` or `em`. [Source](https://www.geeksforgeeks.org/websites-apps/responsive-web-design/#)

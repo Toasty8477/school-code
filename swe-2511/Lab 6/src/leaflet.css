@@ -1,0 +1,14 @@
+/*
+ * Class: SWE2511 - JavaScript Libraries
+ * CSS for Leaflet Map
+*/
+
+.map {
+    height: 700px;
+    width: 1000px;
+}
+
+.menu_item {
+    margin: 0.5em;
+    display: inline;
+}

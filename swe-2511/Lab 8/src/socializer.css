@@ -1,0 +1,18 @@
+/*
+    Class: SWE2511 - Security and Web Storage
+    Name: YOUR NAME HERE
+    Class Section: YOUR SECTION HERE
+*/
+
+body {
+    background-color: lightgray;
+    margin: 20px;
+}
+
+#errormessage {
+    color: red;
+}
+
+.hidden {
+    visibility: hidden;
+}

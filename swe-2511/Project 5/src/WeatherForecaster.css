@@ -1,0 +1,20 @@
+/*
+ * Class: SWE2511 - Weather Forecaster
+ * Name: YOUR NAME HERE
+ * Class Section: YOUR SECTION HERE
+*/
+
+.map {
+    height: 30em;
+    width: 100%;
+    margin: auto;
+}
+
+.forecastCard {
+    width: 10rem;
+    height: 25rem;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}

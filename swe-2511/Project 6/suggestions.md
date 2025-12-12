@@ -1,0 +1,3 @@
+I enjoyed the assignment.  
+In the API documentation it is not clear that the file data is supposed to be in the body of th request. From the readme it seems like it should be but you might make that more clear.  
+It might be interesting to have errors respond with different http codes instead of just 200. This could be a good way to show how to send different codes with express and how to handle different types of status codes with the fetch api.

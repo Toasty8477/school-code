@@ -1,0 +1,26 @@
+<!--
+	Class: SWE2511 - JavaScript Libraries
+	Template for Leaflet Map
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaflet Exercise</title>
+
+    <!-- Include the Leaflet library -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Include the JavaScript and CSS to create the map -->
+    <link type="text/css" rel="stylesheet" href="leaflet.css" />
+    <script src="leaflet.js"></script>
+</head>
+<body>
+    <h2>Leaflet Map</h2>
+    <div class="menu_item">Map is centered at: <span id="latlogcenter"></span></div>
+    <div class="menu_item"><button id="addmarker">Add Center Marker</button></div>
+    <div class="menu_item"><button id="clear">Clear Markers</button></div>
+    <div id="map_div" class="map"></div>
+</body>
+</html>

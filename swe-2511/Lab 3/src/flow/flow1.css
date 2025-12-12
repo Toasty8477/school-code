@@ -1,0 +1,20 @@
+/*
+ * Class: SWE2511 - Layout Managers
+ * Flow Layout Exercise 1
+ * Name(s): Colin Glynn and Alex Horton
+ * Class Section: 111
+ */
+
+p {
+    /* Additional CSS properties and values as needed */
+    font-size: max(1em, 3vw);
+}
+
+img {
+    /* Additional CSS properties and values as needed */
+    width: min(30vw, 200px);
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

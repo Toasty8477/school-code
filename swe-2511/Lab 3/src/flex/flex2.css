@@ -1,0 +1,47 @@
+/*
+ * Class: SWE2511 - Layout Managers
+ * Flex Layout Exercise 2
+ * Name(s): Colin Glynn and Alex Horton
+ * Class Section: 111
+ */
+
+/*
+ * Set the body to no spacing
+ *    this puts the navigation bar at the exact top and left of the page
+ *    and forces it to stretch the entire browser window
+ */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightgreen;
+    padding: 5px;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.nav {
+    /* Additional CSS properties and values as needed */
+    border: 1px solid black;
+    padding: 5px;
+    background-color: lightgreen;
+    flex: 0 0 auto;
+}
+
+/*
+ * Ensure content starts below navbar
+ * so text isn't hidden at top of page
+ */
+.paragraphs {
+    margin-top: 70px;
+    padding: 10px;
+}

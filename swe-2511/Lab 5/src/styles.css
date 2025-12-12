@@ -1,0 +1,31 @@
+/*
+ * Class: SWE2511 - Bootstrap Web Page
+ * Name: Colin Glynn and Alex Horton
+ * Class Section: 111
+ */
+
+/* Responsive typography changes */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem; /* smaller font for tablets */
+    }
+    main .card-title {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive padding/margin adjustments */
+@media (max-width: 576px) {
+    aside {
+        padding: 1rem; /* reduce sidebar padding on small screens */
+    }
+    main {
+        margin-top: 1rem;
+    }
+}
+
+/* Example of extra styling (documented in comments) */
+.card {
+    border-radius: 1rem;   /* rounded corners for nicer look */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,1 @@
+I thought the assignent was pretty straight forward. I like the freedom we are given to style things how we want instead of exactly like the screenshots.

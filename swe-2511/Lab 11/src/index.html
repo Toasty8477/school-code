@@ -1,0 +1,115 @@
+<!--
+    Class: SWE2511 - Calculator
+
+	Calculator HTML structure
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <!-- Include the latest version of Bootstrap -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" type="module"></script>
+
+    <!-- Include additional styling -->
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+
+    <!-- Include javascript for the application -->
+    <script src="calculator.js" type="module"></script>
+</head>
+<body>
+    <h1 class="text-center mb-4">Calculator</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-7">
+                <h2>Arithmetic</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center op_row">
+            <div class="col-2">
+                <label for="input_a">Enter a number:</label><input id="input_a" type="text" class="form-control" value="0">
+                <div id="numA_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-1 op_equals">
+                <select id="operation_select" class="form-select">
+                    <option value="plus">+</option>
+                    <option value="minus">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divide">/</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <label for="input_b">Enter a number:</label><input id="input_b" type="text" class="form-control" value="0">
+                <div id="numB_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-2 op_equals"><h3><span class="me-2">=</span><span id="result"></span></h3></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-9">
+                <h2>Quadratic Formula<span id="quad_result"></span></h2>
+            </div>
+        </div>
+        <div class="row justify-content-center op_row">
+            <div class="col-2">
+                <label for="quad_a">Enter a number:</label><input id="quad_a" type="text" class="form-control" placeholder="A">
+                <div id="quadA_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-1 op_equals"><h3>x<sup>2</sup> +</h3></div>
+            <div class="col-2">
+                <label for="quad_b">Enter a number:</label><input id="quad_b" type="text" class="form-control" placeholder="B">
+                <div id="quadB_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-1 op_equals"><h3>x +</h3></div>
+            <div class="col-2">
+                <label for="quad_c">Enter a number:</label><input id="quad_c" type="text" class="form-control" placeholder="C">
+                <div id="quadC_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-1 op_equals"><h3>= 0</h3></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-9">
+                <h2>Greatest Common Divisor</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center op_row">
+            <div class="col-1 op_equals"><h3>gcd(</h3></div>
+            <div class="col-2">
+                <label for="gcd_a">Enter a number:</label><input id="gcd_a" type="text" class="form-control" placeholder="A">
+                <div id="gcdA_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-1 op_equals"><h3>, </h3></div>
+            <div class="col-2">
+                <label for="gcd_b">Enter a number:</label><input id="gcd_b" type="text" class="form-control" placeholder="B">
+                <div id="gcdB_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-1 op_equals"><h3>)</h3></div>
+            <div class="col-2 op_equals"><h3><span class="me-2">=</span><span id="gcdResult"></span></h3></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-9">
+                <h2>Vector Magnitude</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center op_row">
+            <div class="col-1 op_equals"><h3>&LeftAngleBracket;</h3></div>
+            <div class="col-2">
+                <label for="mag_a">Enter a number:</label><input id="mag_a" type="text" class="form-control" placeholder="A">
+                <div id="magA_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-2">
+                <label for="mag_b">Enter a number:</label><input id="mag_b" type="text" class="form-control" placeholder="B">
+                <div id="magB_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-2">
+                <label for="mag_c">Enter a number:</label><input id="mag_c" type="text" class="form-control" placeholder="C">
+                <div id="magC_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-1 op_equals"><h3>&RightAngleBracket;</h3></div>
+            <div class="col-2 op_equals"><h3><span class="me-2">=</span><span id="magResult"></span></h3></div>
+        </div>
+    </div>
+</body>
+</html>

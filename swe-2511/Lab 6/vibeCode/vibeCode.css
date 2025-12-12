@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+svg {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.axis-label {
+    font-size: 14px;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+.line {
+    fill: none;
+    stroke-width: 3;
+}
+
+.wolves-line {
+    stroke: #e74c3c;
+}
+
+.moose-line {
+    stroke: #3498db;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 13px;
+    color: #333;
+}

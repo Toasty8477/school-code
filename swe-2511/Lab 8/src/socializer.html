@@ -1,0 +1,42 @@
+<!--
+    Class: SWE2511 - Security and Web Storage
+	Name: YOUR NAME HERE
+	Class Section: YOUR SECTION HERE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Include the Bootstrap library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- Include the files containing the implementation of this application -->
+    <link type="text/css" rel="stylesheet" href="socializer.css"/>
+    <script src="socializer.js"></script>
+    
+    <title>MSOE Socializer</title>
+</head>
+<body>
+    <h1>MSOE Socializer</h1>
+    <label for="input" class="form-label">What's on your mind?<label></label>
+    <div class="input-group mb-3">
+        <input id="input" type="text" class="form-control">
+        <button id="post" class="btn btn-primary" type="button">Post</button>
+        <button id="remove" class="btn btn-danger" type="button">Remove All Posts</button>
+    </div>
+    <table id="table" class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <th>Message</th>
+            <th>Like &#128077;</th>
+            <th>Number of Likes</th>
+            <th>Dislike &#128078;</th>
+            <th>Number of Dislikes</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <p id="errormessage" class="hidden">Not a Valid Post!</p>
+</body>
+</html>

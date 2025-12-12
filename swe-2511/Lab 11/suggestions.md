@@ -1,0 +1,1 @@
+The way that handle arithmetic handles errors made it difficult to find that I hadn't imported a function that I needed to the file. The error showed as the answer instead of in the console. If it's possible to catch only a certain type of error that might help.

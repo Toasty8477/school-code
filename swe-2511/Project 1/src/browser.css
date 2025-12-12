@@ -1,0 +1,86 @@
+body {
+    text-align: center;
+    font-family: monospace;
+    background-color: lightgray;
+    color: darkslateblue;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0turn)}
+    25% {transform: rotate(0.25turn)}
+    50% {transform: rotate(0.5turn)}
+    75% {transform: rotate(0.75turn)}
+    100% {transform: rotate(1.0turn);}
+}
+
+img:hover {
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border: 4px solid darkslateblue;
+}
+
+th {
+    background-color: lightsteelblue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+td {
+    border: 1.5px solid black;
+}
+
+.teams, .webapps, .discrete, .meeting, .calc, .software, .free-hour {
+    border-radius: 10px;
+    width: calc((75% - (75% / 10)) / 5);
+}
+
+.time {
+    width: calc(75% / 10);
+}
+
+.teams {
+    background-color: coral;
+    color: aqua;
+}
+
+.webapps {
+    background-color: violet;
+    color: greenyellow;
+}
+
+.calc {
+    background-color: lightcoral;
+    color: palegreen;
+}
+
+.meeting {
+    background-color: cadetblue;
+    color: paleturquoise;
+}
+
+.software {
+    background-color: thistle;
+    color: blueviolet;
+}
+
+.discrete {
+    background-color: palevioletred;
+    color: blue;
+}
+
+.free-hour {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,52 @@
+/*
+ * Class: SWE2511 - HTML and CSS
+ * Names: Colin and Alex
+ * Class Section: 111
+ */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+}
+
+ h1 {
+    color: orange;
+ }
+
+ h3 {
+    color: cyan;
+    font-family: 'Comic Sans MS';
+ }
+
+ #red-text {
+    color: red
+ }
+
+ p {
+    border: 1px black solid;
+ }
+
+ p:hover {
+    border: 10px blue dotted
+ }
+
+ li {
+    padding: 5px;
+    background-clip: content-box;
+ }
+
+ #item1 {
+    background-color: red;
+ }
+
+ #item2 {
+    background-color: orange;
+ }
+
+ #item3 {
+    background-color: yellow;
+ }
+
+ #item4 {
+    background-color: green;
+ }

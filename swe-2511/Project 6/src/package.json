@@ -1,0 +1,8 @@
+{
+  "name": "textfileserver",
+  "description": "Text File Manager Server",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
