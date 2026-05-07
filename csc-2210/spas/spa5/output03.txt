@@ -1,0 +1,31 @@
+> Adding 100 copies of this is very repetitive
+> Deleting line 1
+> Deleting line 1
+> Deleting line 1
+ 95. (23) this is very repetitive
+ 96. (23) this is very repetitive
+ 97. (23) this is very repetitive
+ 98. (23) this is very repetitive
+ 99. (23) this is very repetitive
+> Adding 3 copies of this is very repetitive
+> Replacing line 95 with -----------------------------------------------------
+> Editing line 95 at 0 to *
+> Deleting line 101
+> Deleting line 93
+> Deleting line 97
+ 90. (23) this is very repetitive
+ 91. (23) this is very repetitive
+ 92. (23) this is very repetitive
+ 93. (23) this is very repetitive
+ 94. (53) *----------------------------------------------------
+ 95. (23) this is very repetitive
+ 96. (23) this is very repetitive
+ 97. (23) this is very repetitive
+ 98. (23) this is very repetitive
+ 99. (23) this is very repetitive
+100. (23) this is very repetitive
+101. (23) this is very repetitive
+102. (23) this is very repetitive
+After constructing buffer, bytes allocated == 4599
+----------------------------------------
+At end, all allocated data released.

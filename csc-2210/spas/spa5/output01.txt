@@ -1,0 +1,3 @@
+After constructing buffer, bytes allocated == 5000
+----------------------------------------
+At end, all allocated data released.

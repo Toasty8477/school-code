@@ -1,0 +1,6 @@
+Found 1 players with more runs than hits and walks: 
+ AaronHill
+More hits than rbi: 7
+               ave: 98
+More rbi than hits: 36
+               ave: 274

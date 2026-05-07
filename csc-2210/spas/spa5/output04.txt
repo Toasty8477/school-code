@@ -1,0 +1,26 @@
+> Adding 5 copies of five lines of text
+> Adding 4 copies of four lines of text for 9 total
+> Replacing line 3 with line 3 updated to this text
+  0. (18) five lines of text
+  1. (18) five lines of text
+  2. (18) five lines of text
+  3. (27) line 3 updated to this text
+  4. (18) five lines of text
+  5. (30) four lines of text for 9 total
+  6. (30) four lines of text for 9 total
+  7. (30) four lines of text for 9 total
+  8. (30) four lines of text for 9 total
+> Editing line 7 at 12 to 0
+> Deleting line 2
+  0. (18) five lines of text
+  1. (18) five lines of text
+  2. (27) line 3 updated to this text
+  3. (18) five lines of text
+  4. (30) four lines of text for 9 total
+  5. (30) four lines of text for 9 total
+  6. (30) four lines o0 text for 9 total
+  7. (30) four lines of text for 9 total
+  8. (30) four lines of text for 9 total
+After constructing buffer, bytes allocated == 5080
+----------------------------------------
+At end, all allocated data released.

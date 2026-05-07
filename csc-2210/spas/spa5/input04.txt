@@ -1,0 +1,7 @@
+a 5 five lines of text
+a 4 four lines of text for 9 total
+r 3 line 3 updated to this text
+p 0
+e 7 12 0
+d 2
+p 0

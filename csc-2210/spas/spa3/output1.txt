@@ -1,0 +1,10 @@
+Enter the first names and birth days of the students in the first pool:
+Enter the first names of the students in the second pool:
+
+A perfect match for sue born on day 1: blixie born on day 5
+A perfect match for tom born on day 5: blixie born on day 5
+A perfect match for tom born on day 5: aaron born on day 19
+A perfect match for tom born on day 5: zz top born on day 8
+A perfect match for ray born on day 23: aaron born on day 19
+A perfect match for jack x born on day 14: blixie born on day 5
+A perfect match for jack x born on day 14: aaron born on day 19

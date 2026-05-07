@@ -1,0 +1,6 @@
+Found 1 players with more runs than hits and walks: 
+ Jeff_McNeil
+More hits than rbi: 2
+               ave: 251
+More rbi than hits: 7
+               ave: 264

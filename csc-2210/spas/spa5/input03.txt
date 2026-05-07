@@ -1,0 +1,12 @@
+a 100 this is very repetitive
+d 1
+d 1
+d 1
+p 95
+a 3 this is very repetitive
+r 95 -----------------------------------------------------
+e 95 0 *
+d 101
+d 93
+d 97
+p 90

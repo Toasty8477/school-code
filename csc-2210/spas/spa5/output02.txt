@@ -1,0 +1,9 @@
+> Adding 100 copies of this is very repetitive
+ 95. (23) this is very repetitive
+ 96. (23) this is very repetitive
+ 97. (23) this is very repetitive
+ 98. (23) this is very repetitive
+ 99. (23) this is very repetitive
+After constructing buffer, bytes allocated == 4528
+----------------------------------------
+At end, all allocated data released.

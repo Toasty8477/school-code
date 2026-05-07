@@ -1,0 +1,11 @@
+name    	at-bat	runs	hits	rbi	walks
+Hank_Aaron	495	95	162	118	71
+Barry_Bonds	9847	2227	2935	1996	2558
+Aaron_Judge	570	166	130	131	111
+Derrin_Ruf	334	52	68	45	45
+Freddie_Freeman	612	117	199	100	84
+Jake_Cronenworth	587	88	141	88	70
+Jeff_McNeil	225	74	35	19	14
+Matt_Carpenter	128	28	35	37	19
+Teoscar_Hernandez	499	71	133	77	34
+Trent_Grisham	451	58	83	53	57

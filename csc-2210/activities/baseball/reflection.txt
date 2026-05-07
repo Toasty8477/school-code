@@ -1,0 +1,9 @@
+1. Using list was a better choice than vector the input is an arbitrary ammount of players so using a list avoids having
+to do a lot of resize operations that you would have to do with a vector.
+
+2. This implementation could be made slightly better by using a vector and storing the players directly in the vector
+instead of a pointers to reduce memory usage. Since this program mostly involves iterating over a list other containers
+don't provide much benefit over a list.
+
+3. We store pointers instead of objects because the Player class handles reading the values to create the player and the
+object would be deleted after the function finishes calling unless it is dynamically allocated.

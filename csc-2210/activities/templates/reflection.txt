@@ -1,0 +1,12 @@
+1. Using template methods greatly reduces the ammount of code you have to write and reduces the chance of making
+a mistake when writing many overloads.
+
+2. Removing the special cases would make everything print "Value: " and then the data passed in. For pointers it would
+print the memory address.
+
+3. I used both full and partial specialization. The string and bool cases are full specialization because there is no
+generic behavior. The pointer case is partial specialization because it is specialized for pointers but takes any
+pointer type.
+
+4. My solution works for any primitive type of pointer. When passing a int, double, bool, etc. type to the method it
+will output the value but for a class it will likely behave differently.

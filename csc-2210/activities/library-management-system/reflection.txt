@@ -1,0 +1,3 @@
+1. Seperating the .h and .cpp files in larger projects is important as it allows you to seperate classes into seperate files that are can be included in your main file
+2. Initializer lists allow you to make instance variables const and initialize them in a constructor
+3. using a makefile has the advantage of only building files that have changed and only having write make instead of all the file names for g++
