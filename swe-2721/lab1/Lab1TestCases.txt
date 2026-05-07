@@ -1,0 +1,27 @@
+3 3 3           # This line demonstrates a basic equilateral triangle
+1  3      15    # THIS SHOULD BE AN INVALID TRIANGLE
+5 20 30         # Invalid, a + b !> c
+10 30 5         # Invalid, a + c !> b
+500 30 20       # Invalid, b + c !> a
+0 1 1           # Invalid, a !> 0
+1 0 1           # Invalid, b !> 0
+1 1 0           # Invalid, c !> 0
+5 4 6           # Valid Scalene Triangle
+5 5 4           # Valid Isosceles Triangle
+4 5 5           # Valid Isosceles Triangle
+5 4 5           # Valid Isosceles Triangle
+5 5 5           # Valid Equilateral Triangle
+3 4 5           # Valid Right Scalene Triangle
+1 1             # Invalid, not enough sides
+1 1 1 1         # Invalid, too many sides
+one two three   # Text is not a valid input
+1 two 3         # Text still isn't valid
+5.0 5.0 5.0     # Valid triangle but floats now
+5 5.0 5         # All numbers should be decimals
+    3   3     3 # Spaces shouldn't matter in input
+-3 3 3          # Negative numbers shouldn't work
+2147483648 2147483648 2147483648 # Number is over the 32 bit integer limit
+20 5 25         # Invalid a + b !> c
+20 25 5         # Invalid, a + c !> b
+25 20 5         # Invalid, b + c !> a
+255 255 360.6

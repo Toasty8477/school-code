@@ -1,0 +1,91 @@
+plugins {
+    id 'application'
+    id 'java'
+}
+
+version = '1.0-SNAPSHOT'
+
+// This line will set the compiler version. If a compatible compiler is not found,
+// Gradle will automatically download an appropriate and compatible version.
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+// This will set the repository for open source libraries. mavenCentral is a common repository for Java code.
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Use TestNG framework
+    testImplementation 'org.testng:testng:7.10.2'
+
+    // Optional: simple logger for test output (only needed if your tests/libs use SLF4J)
+    testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.16'
+}
+
+tasks.named('test', Test) {
+    // Force tests to run every time when using the Gradle ▶ button in IntelliJ.
+    // This avoids confusion caused by Gradle's UP-TO-DATE checks in student projects.
+    outputs.upToDateWhen { false }
+    // Use TestNG for unit tests.
+    useTestNG {
+        includeGroups 'student', 'demo', 'all'
+        // If you want to exclude groups, use e.g.:
+        // excludeGroups 'slow'
+        useDefaultListeners = true
+        outputDirectory = file("$projectDir/TestNG_Reports")
+    }
+
+    // Memory for the test JVM
+    maxHeapSize = '1G'
+
+    testLogging {
+        events "PASSED", "FAILED", "SKIPPED", "STANDARD_ERROR"
+        // Optional:
+        events "STANDARD_OUT"
+        exceptionFormat "FULL"
+        showExceptions true
+        showCauses true
+        showStackTraces true
+    }
+
+    // Fail the build if zero tests ran (good for CI)
+    afterSuite { desc, result ->
+        if (!desc.parent && result.testCount == 0) {
+            throw new GradleException("No tests were found. Failing the build.")
+        }
+    }
+
+    // Print a summary at the end of the outermost suite
+    afterSuite { desc, result ->
+        if (!desc.parent) { // outermost suite
+            def output =
+                    "Results: ${result.resultType} (${result.testCount} tests, " +
+                            "${result.successfulTestCount} successes, ${result.failedTestCount} failures, " +
+                            "${result.skippedTestCount} skipped)"
+            def startItem = '|  '
+            def endItem = '  |'
+            def repeatLength = startItem.length() + output.length() + endItem.length()
+            println('\n' + ('-' * repeatLength))
+            println(startItem + output + endItem)
+            println('-' * repeatLength)
+        }
+    }
+}
+
+// Helper as a closure (safe/idiomatic in Gradle build scripts)
+ext.printResults = { allResults ->
+    def lines = allResults*.readLines().flatten()
+    def maxLength = (lines.collect { it.length() }.max() ?: 0)
+
+    println "+${'-' * (maxLength + 2)}+"
+    println allResults.collect { block ->
+        block.readLines().collect { line ->
+            "| ${line}${' ' * (maxLength - line.length())} |"
+        }.join("\n")
+    }.join("\n+${'-' * (maxLength + 2)}+\n")
+    println "+${'-' * (maxLength + 2)}+"
+}
