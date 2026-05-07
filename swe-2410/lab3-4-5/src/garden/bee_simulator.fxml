@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" onKeyPressed="#onKeyPressed" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garden.Controller">
+      <Pane id="theGarden" fx:id="gardenPane" minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: green" />
+   <Pane id="controls" minHeight="200.0" minWidth="600.0" prefHeight="200.0" prefWidth="600.0" GridPane.rowIndex="1">
+      <children>
+         <TabPane minHeight="200.0" minWidth="600.0" onKeyPressed="#onKeyPressed" onMouseClicked="#legendSelectionChanged" prefHeight="200.0" prefWidth="600.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+           <tabs>
+             <Tab onSelectionChanged="#legendSelectionChanged" text="Simulation">
+               <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="600.0">
+                        <children>
+                           <VBox minHeight="200.0" minWidth="600.0" prefHeight="200.0" prefWidth="600.0" spacing="10.0">
+                              <children>
+                                 <Label text="Press right arrow key to step simulator" />
+                                 <HBox prefHeight="25.0" prefWidth="200.0" style="-fx-spacing: 10;">
+                                    <children>
+                                       <Label minHeight="25.0" minWidth="60.0" prefHeight="25.0" prefWidth="60.0" text="Bees:">
+                                          <font>
+                                             <Font name="System Bold" size="15.0" />
+                                          </font>
+                                       </Label>
+                                       <Button minWidth="25.0" mnemonicParsing="false" onAction="#subtractBee" prefWidth="25.0" text="-" />
+                                       <TextField fx:id="beeCount" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="60.0" text="0" />
+                                       <Button minWidth="25.0" mnemonicParsing="false" onAction="#addBee" prefHeight="25.0" prefWidth="25.0" text="+" />
+                                    </children>
+                                 </HBox>
+                                 <HBox prefHeight="25.0" prefWidth="200.0" style="-fx-spacing: 10;">
+                                    <children>
+                                       <Label minHeight="25.0" minWidth="60.0" prefHeight="25.0" prefWidth="60.0" text="Flowers:">
+                                          <font>
+                                             <Font name="System Bold" size="15.0" />
+                                          </font>
+                                       </Label>
+                                       <Button minWidth="25.0" mnemonicParsing="false" onAction="#subtractFlower" prefWidth="25.0" text="-" />
+                                       <TextField fx:id="flowerCount" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="60.0" text="0" />
+                                       <Button minWidth="25.0" mnemonicParsing="false" onAction="#addFlower" prefHeight="25.0" prefWidth="25.0" text="+" />
+                                    </children>
+                                 </HBox>
+                              </children>
+                              <padding>
+                                 <Insets left="10.0" top="10.0" />
+                              </padding>
+                           </VBox>
+                        </children>
+                     </AnchorPane>
+               </content>
+             </Tab>
+             <Tab onSelectionChanged="#legendSelectionChanged" text="Legend">
+               <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                           <ListView prefHeight="200.0" prefWidth="200.0" />
+                           <ScrollPane hbarPolicy="NEVER" hmax="0.0" minHeight="172.0" minWidth="600.0" prefHeight="172.0" prefWidth="600.0">
+                             <content>
+                               <AnchorPane minHeight="0.0" minWidth="600.0" prefWidth="600.0">
+                                    <children>
+                                       <VBox minHeight="258.0" minWidth="600.0" prefWidth="600.0">
+                                          <children>
+                                             <Group>
+                                                <children>
+                                                   <Label layoutX="60.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="Regular Flower">
+                                                      <font>
+                                                         <Font name="System Bold" size="15.0" />
+                                                      </font>
+                                                   </Label>
+                                                   <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@/resources/aster.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <Label layoutX="60.0" layoutY="25.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="Bees remain on this flower for 4 ticks, each tick gaining 10 energy" />
+                                                </children>
+                                             </Group>
+                                             <Group layoutX="10.0" layoutY="10.0">
+                                                <children>
+                                                   <Label layoutX="60.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="Draining Flower">
+                                                      <font>
+                                                         <Font name="System Bold" size="15.0" />
+                                                      </font>
+                                                   </Label>
+                                                   <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@/resources/aster.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <Label layoutX="60.0" layoutY="25.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="Bees remain on this flower until 30 energy has been drained" />
+                                                   <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@/resources/thorns.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                </children>
+                                             </Group>
+                                             <Group layoutX="10.0" layoutY="60.0">
+                                                <children>
+                                                   <Label layoutX="60.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="Regular Bee">
+                                                      <font>
+                                                         <Font name="System Bold" size="15.0" />
+                                                      </font>
+                                                   </Label>
+                                                   <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@/resources/bee-1.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <Label layoutX="60.0" layoutY="25.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="This bee will fly to random flowers" />
+                                                </children>
+                                             </Group>
+                                             <Group layoutX="10.0" layoutY="110.0">
+                                                <children>
+                                                   <Label layoutX="60.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="Zig-Zag Bee">
+                                                      <font>
+                                                         <Font name="System Bold" size="15.0" />
+                                                      </font>
+                                                   </Label>
+                                                   <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@/resources/bee-2.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <Label layoutX="60.0" layoutY="25.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="This bee zig-zags between flowers" />
+                                                </children>
+                                             </Group>
+                                             <Group layoutX="10.0" layoutY="161.0">
+                                                <children>
+                                                   <Label layoutX="60.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="Fancy Bee">
+                                                      <font>
+                                                         <Font name="System Bold" size="15.0" />
+                                                      </font>
+                                                   </Label>
+                                                   <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@/resources/top_hat.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <Label layoutX="60.0" layoutY="25.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="Bees with a top hat will try to stay away from bees that aren't also wearing a top hat while it travels between flowers" />
+                                                </children>
+                                             </Group>
+                                             <Group layoutX="10.0" layoutY="212.0">
+                                                <children>
+                                                   <Label layoutX="60.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="Drunken Bee">
+                                                      <font>
+                                                         <Font name="System Bold" size="15.0" />
+                                                      </font>
+                                                   </Label>
+                                                   <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@/resources/beer_mug.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                   <Label layoutX="60.0" layoutY="25.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="60.0" text="Bees holding a beer mug are drunk and wobble around while they fly" />
+                                                </children>
+                                             </Group>
+                                          </children>
+                                       </VBox>
+                                    </children>
+                                 </AnchorPane>
+                             </content>
+                           </ScrollPane>
+                        </children></AnchorPane>
+               </content>
+             </Tab>
+           </tabs>
+         </TabPane>
+      </children>
+      <GridPane.margin>
+         <Insets />
+      </GridPane.margin>
+   </Pane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="200.0" />
+   </rowConstraints>
+</GridPane>

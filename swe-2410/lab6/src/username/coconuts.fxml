@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="center" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="username.GameController">
+    <Pane fx:id="gamePane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, derive(skyblue, 20%), derive(skyblue, -40%));" />
+   <Pane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="600.0" prefWidth="200.0">
+            <children>
+               <Label fx:id="laserLabel" focusTraversable="false" text="Laser Strikes: 0">
+                  <padding>
+                     <Insets bottom="80.0" left="10.0" right="10.0" top="10.0" />
+                  </padding>
+               </Label>
+               <Label fx:id="beachLabel" focusTraversable="false" layoutX="10.0" layoutY="10.0" text="Beach Strikes: 0">
+                  <padding>
+                     <Insets bottom="80.0" left="10.0" right="10.0" top="10.0" />
+                  </padding>
+               </Label>
+               <HBox>
+                  <VBox.margin>
+                     <Insets left="10.0" right="10.0" />
+                  </VBox.margin>
+                  <children>
+                     <Button fx:id="pauseButton" focusTraversable="false" mnemonicParsing="false" onAction="#pauseGame" prefHeight="59.0" prefWidth="90.0" text="Pause" />
+                     <Button fx:id="restartButton" focusTraversable="false" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="59.0" prefWidth="90.0" text="Restart" />
+                  </children>
+                  <padding>
+                     <Insets bottom="80.0" />
+                  </padding>
+               </HBox>
+               <Label focusTraversable="false" text="Controls:">
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+               </Label>
+               <Label focusTraversable="false" layoutX="10.0" layoutY="364.0" prefHeight="73.0" prefWidth="200.0" text="Left and right arrows move the crab. Up arrow fires a laser. Down arrow restarts the game. Space bar pauses the game." wrapText="true">
+                  <padding>
+                     <Insets left="10.0" right="10.0" />
+                  </padding>
+               </Label>
+               <Label fx:id="gameOverLabel" alignment="CENTER" layoutX="10.0" layoutY="381.0" prefHeight="73.0" prefWidth="200.0" text="Game Over" visible="false" wrapText="true">
+                  <padding>
+                     <Insets left="10.0" right="10.0" top="30.0" />
+                  </padding>
+                  <font>
+                     <Font name="System Bold" size="32.0" />
+                  </font>
+               </Label>
+            </children>
+         </VBox>
+      </children>
+   </Pane>
+</HBox>

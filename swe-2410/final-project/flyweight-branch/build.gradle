@@ -1,0 +1,92 @@
+/*
+ * MSOE CSC2410
+ * Noah Dinan, Alex Horton
+ */
+
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'checkstyle'
+    id 'application'
+    id 'java-library'
+    id 'com.diffplug.spotless' version '7.0.0.BETA2'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+ext {
+    projectName = 'Flyweight'
+}
+
+eclipse {
+    project {
+        name = "$projectName"
+    }
+
+    classpath {
+        defaultOutputDir = file("${project.projectDir}/build/eclipse")
+        file {
+            whenMerged {
+                cp -> cp.getEntries().forEach{
+                    cpEntry -> if(cpEntry.kind=='src') {
+                        cpEntry.output = cpEntry.output.replace('bin/', 'build/eclipse/')
+                    }
+                }
+            }
+        }
+    }
+}
+
+application {
+    mainClass = "finalproject.Main"
+    applicationDefaultJvmArgs = ["--enable-native-access=javafx.graphics"]
+}
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+group = 'dinann'
+version = '1.0.0'
+java.sourceCompatibility = "25.0.1"
+
+javafx {
+   version = "25.0.1"
+   modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.base', 'javafx.swing', 'javafx.graphics' ]
+   //platform = 'linux'
+}
+
+run {
+    standardInput = System.in
+}
+
+checkstyle {
+    config project.resources.text.fromUri("https://csse.msoe.us/csc1110/MSOE_checkStyle.xml")
+    sourceSets = []
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+
+        resources {
+            srcDirs = ['src']
+        }
+    }
+}
+
+spotless {
+  java {
+    indentWithSpaces(4)
+    formatAnnotations()
+    licenseHeader '/*\n * Course: SWE2410 \n * Final Project: Flyweight Pattern\n * Horton, Dinan\n */\n\n'
+  }
+}

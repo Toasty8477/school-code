@@ -1,0 +1,8 @@
+Part 1: Sometimes numbers are out of orders and there are random blocks of nulls. The out of order numbers seem to be
+contained between the null blocks
+
+Part 2: List size is a size between 1500 and 2000, numbers are out of order until reaching a null pointer exception
+
+Part 3: The list is 2000 elements, numbers go to 999 then repeat.
+
+Part 4: Numbers are dispersed throughout the list. It isn't consitient between runs

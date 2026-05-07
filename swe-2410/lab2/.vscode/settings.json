@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "C:/Program Files/Eclipse Adoptium/javafx-sdk-25.0.1/lib/**/*.jar",
+    ],
+    "java.checkstyle.configuration": "https://csse.msoe.us/csc1110/MSOE_checkStyle.xml"
+}
