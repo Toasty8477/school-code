@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Selenium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.20.0'
+
+    // TestNG
+    testImplementation 'org.testng:testng:7.10.2'
+
+    // Optional: WebDriver Manager (auto downloads ChromeDriver)
+    implementation 'io.github.bonigarcia:webdrivermanager:5.8.0'
+}
+
+test {
+    useTestNG()
+}
