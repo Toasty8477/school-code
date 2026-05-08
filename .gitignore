@@ -1,9 +1,12 @@
+# remove report stuff
 *.tex
 *.pdf
 *.out
 *.exe
 *.odt
 report
+
+# build files, ide configs, random extra stuff
 .gradle
 .github
 .idea
