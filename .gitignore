@@ -4,3 +4,9 @@
 *.exe
 *.odt
 report
+.gradle
+.github
+.idea
+build
+coverage
+gradle.properties
